@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Header, Title, Content, Button, Left, Body, Text, Form, Item, Label, Input, Right, Spinner} from 'native-base';
 import { View, Alert } from 'react-native';
 import { trySignup, tryLogin, profile} from '../hasuraApi';
-import ArticleList from './ArticleList';
+//import ArticleList from './ArticleList';
 import Notify from './Notify';
 
 const clusterName = "disentanglement49";
@@ -47,6 +47,22 @@ export default class AuthScreen extends React.Component {
   }
 
   handleSignupPressed = async () => {
+     
+    fetch('https://hooks.zapier.com/hooks/catch/2931424/z67mpy/', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+            name: this.state.usernameTextBox,
+            age: this.state.ageTextBox,
+            profession: this.state.profTextBox
+      
+      }),
+    });
+
+
     let resp = await trySignup(this.state.usernameTextBox, this.state.passwordTextBox);
        if(resp.status !== 200){
       if (resp.status === 504) {
@@ -58,7 +74,9 @@ export default class AuthScreen extends React.Component {
       let a =   await resp.json();
        console.log(a.hasura_id);
       let respp = await profile(this.state.ageTextBox,this.state.userNameTextBox,this.state.profTextBox,a.hasura_id);
-        // this.setState({data:resp.json})  
+      //let respp = await profilespreadsheet(this.state.ageTextBox,this.state.userNameTextBox,this.state.profTextBox,a.hasura_id);
+ 
+      // this.setState({data:resp.json})  
        this.setState({isLoggedIn:true})  
   
   }

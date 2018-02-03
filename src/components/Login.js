@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Header, Title, Content, Button, Left, Body, Text, Form, Item, Label, Input, Right, Spinner} from 'native-base';
 import { View, Alert } from 'react-native';
 import { trySignup, tryLogin, profile} from '../hasuraApi';
-import ArticleList from './ArticleList'
+//import ArticleList from './ArticleList'
 
 const clusterName = "disentanglement49";
 

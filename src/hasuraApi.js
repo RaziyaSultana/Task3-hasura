@@ -243,3 +243,33 @@ export async function profile(){
     });
 }
 */
+
+/*
+
+export async function profilespreadsheet(age,n,pf,id) {
+  console.log('Forwarding user details in google spreadsheet');
+var webhookUrl = "https://hooks.zapier.com/hooks/catch/2931424/z67mpy/";
+    var requestOptions = {
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    };
+    var body = {
+            "name": n,
+            "age": age,
+            "profession": pf
+    };
+requestOptions["body"] = JSON.stringify(body);
+console.log("profile Response ---------------------");
+try{
+  let resp = await fetch(webhookUrl, requestOptions);
+  console.log(resp);
+    return resp;
+    }
+catch (e) {
+  console.log("Request failed: " + e);
+  return networkErrorObj;
+}
+};  
+*/

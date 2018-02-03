@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Header,Title, Tab, Tabs, TabHeading, Icon, Text } from 'native-base';
 import AuthScreen from './src/components/AuthScreen';
-import ArticleList from './src/components/ArticleList';
+//import ArticleList from './src/components/ArticleList';
 import Login from './src/components/Login';
 
 export default class App extends React.Component {
