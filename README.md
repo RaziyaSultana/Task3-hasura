@@ -172,6 +172,6 @@ $ hasura microservice generate --help
 ## Screenshots of the Zapier app
  ![List of articles](/assets/a.png)
 
- (ZapierProject/assets/b.png)
+ ![List of articles](/assets/b.png)
 
- (ZapierProject/assets/c.png)
+![List of articles](/assets/c.png)
