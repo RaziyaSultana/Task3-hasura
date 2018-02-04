@@ -170,8 +170,8 @@ $ hasura api-console
 $ hasura microservice generate --help
 ```
 ## Screenshots of the Zapier app
- (assets/a.png)
+ (ZapierProject/assets/a.png)
 
- (assets/b.png)
+ (ZapierProject/assets/b.png)
 
- (assets/c.png)
+ (ZapierProject/assets/c.png)
