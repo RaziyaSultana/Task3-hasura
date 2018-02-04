@@ -170,8 +170,8 @@ $ hasura api-console
 $ hasura microservice generate --help
 ```
 ## Screenshots of the Zapier app
- ![React Native App](https://github.com/hasura/hello-react-native/raw/master/readme-assets/a.png)
+ (assets/a.png)
 
- (https://github.com/hasura/hello-react-native/raw/master/readme-assets/b.png)
+ (assets/b.png)
 
- (https://github.com/hasura/hello-react-native/raw/master/readme-assets/c.png)
+ (assets/c.png)
